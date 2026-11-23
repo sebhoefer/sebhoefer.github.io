@@ -1,0 +1,26 @@
+<span>
+    {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
+    <span class="px-1">
+        {{ $isCV := hasSuffix .url ".pdf" }}
+        <a href="{{ .url }}"
+            {{ if not (hasPrefix .url "#") }} target="_blank" {{ end }}
+            {{ if $isCV }} title="Download CV" aria-label="Download CV" {{ end }}
+            class="btn social-icon{{ if $isCV }} social-cv{{ end }}"
+        >
+            <i class="{{ .icon }}"></i>
+            {{ if $isCV }}<span class="cv-label">CV</span>{{ end }}
+        </a>
+    </span>
+    {{ end }}
+
+    {{ range .Site.Params.hero.socialLinks.customIcons }}
+    <span class="px-1">
+        <a href="{{ .url }}"
+            {{ if not (hasPrefix .url "#") }} target="_blank" {{ end }}
+            class="btn social-icon"
+        >
+            <img src="{{ .icon }}">
+        </a>
+    </span>
+    {{ end }}
+</span>

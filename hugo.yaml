@@ -171,7 +171,7 @@ params:
             date: "2025 - present"
             content: |
               - Leading multiple large-scale ecoacoustic monitoring projects across Australia focusing on reliable detection
-              of threatened and introduced species, revealing dial and seasonal activity patterns, and assessing the impact
+              of threatened and introduced species, revealing diel and seasonal activity patterns, and assessing the impact
               of solar farms and urbanisation on vertebrates.
               - Developing and evaluating effective custom species call recognisers for mammals, frogs, reptiles, and birds.
               - Designing and delivering comprehensive workshops to build capacity in passive acoustic monitoring with indigenous rangers,
@@ -186,7 +186,7 @@ params:
     items:
       - title: "PhD in Ecology/Ecoacoustics"
         school:
-          name: "James Cook University"
+          name: "James Cook University, Australia"
           url: "https://www.jcu.edu.au"
         date: "2020 - 2024"
         content: |-
@@ -197,7 +197,7 @@ params:
           monitoring of biodiversity
       #- title: "Honours (Behavioural Biology)"
       #  school:
-      #    name: "Macquarie University"
+      #    name: "Macquarie University, Australia"
       #    url: "https://www.mq.edu.au/"
       #  date: "2018"
       #  content: |-
@@ -206,7 +206,7 @@ params:
       #    Studied the relationship between social behaviour and cognitive abilities of five Australian skinks
       #- title: "Bachelor of Science (Biology)"
       #  school:
-      #    name: "Freie Universität Berlin"
+      #    name: "Freie Universität Berlin, Germany"
       #    url: "https://www.fu-berlin.de/en/index.html"
       #  date: "2015 - 2018"
       #  content: |-
@@ -241,7 +241,7 @@ params:
           facilities can support rich and diverse communities of wildlife
         image: /images/solar.jpg
         links:
-          - icon: fab fa-safari
+          - icon: fas fa-arrow-up-right-from-square
             url: https://decarb-hub.org/publication/an-outstanding-opportunity-using-solar-farms-for-biodiversity-preservation
       - title: Building Capacity for PAM
         content: >-

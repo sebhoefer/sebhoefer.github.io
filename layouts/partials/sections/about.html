@@ -3,25 +3,33 @@
 <section id="about" class="py-0 py-sm-5">
     <div class="container bg-transparent">
         <h3 class="text-center bg-transparent">{{ $about.title | default (i18n "about") }}</h3>
-        <div class="bg-transparent row justify-content-center align-items-center px-3 py-5">
-            {{ if .Site.Params.about.image }}
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="{{ .Site.Params.title }} profile picture">
-                </div>
-            </div>
-            {{ end }}
-            <div class="col-sm-12 col-md-12 col-lg-8 content">
-                {{ $about.content | markdownify }}
+        <div class="row justify-content-center py-5">
+            <div class="col-12">
+                <div class="card about-card">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="row justify-content-center align-items-center">
+                            {{ if .Site.Params.about.image }}
+                            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                                <div class="image d-flex px-4">
+                                    <img src="{{ .Site.Params.about.image }}" class="img-thumbnail mx-auto rounded-circle" alt="{{ .Site.Params.title }} profile picture">
+                                </div>
+                            </div>
+                            {{ end }}
+                            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                                {{ $about.content | markdownify }}
 
-                {{ if .Site.Params.about.skills.enable }}
-                {{ $about.skills.title | default .Site.Params.about.skills.title }}
-                <ul>
-                    {{ range .Site.Params.about.skills.items }}
-                    <li>{{ . | markdownify }}</li>
-                    {{ end }}
-                </ul>
-                {{ end }}
+                                {{ if .Site.Params.about.skills.enable }}
+                                {{ $about.skills.title | default .Site.Params.about.skills.title }}
+                                <ul>
+                                    {{ range .Site.Params.about.skills.items }}
+                                    <li>{{ . | markdownify }}</li>
+                                    {{ end }}
+                                </ul>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
