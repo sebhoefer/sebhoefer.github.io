@@ -122,12 +122,14 @@ params:
       
       
       
-      I’m a wildlife biologist at James Cook University, turning mountains of environmental sound recordings into insights
-      about the natural world to help with biodiversity monitoring and conservation.
+      I’m a wildlife biologist at James Cook University, turning environmental sound
+      recordings into insights about the natural world to help with biodiversity monitoring
+      and conservation.
       
-      I build and test tools that recognise animal calls, and when I’m not working with soundscapes, you’ll probably find me
-      hiking, looking for reptiles and amphibians, or appreciating whatever wild thing crosses my path.
-      Herpetology is my first love, but I’m growing into an all-round naturalist.
+      I build and test tools that recognise animal calls, and when I’m not working with
+      soundscapes, you’ll probably find me hiking, looking for reptiles and amphibians,
+      or appreciating whatever wild thing crosses my path. Herpetology is my first love,
+      but I’m growing into an all-round naturalist.
       
     skills:
       enable: false
